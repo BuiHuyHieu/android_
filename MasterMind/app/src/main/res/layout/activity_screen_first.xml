@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custome_background">
+
+    <TextView
+        android:id="@+id/tvTimeStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="@string/time_start"
+        android:textColor="#02E811"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:id="@+id/lnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvTimeStart"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/imgFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+             />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:id="@+id/imgResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+             />
+    </LinearLayout>
+
+
+</RelativeLayout>

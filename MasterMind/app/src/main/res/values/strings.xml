@@ -1,0 +1,7 @@
+<resources>
+    <string name="time_start">0</string>
+    <string name="app_name">MasterMind</string>
+    <string name="button_play">Play</string>
+    <string name="button_help">Help</string>
+    <string name="guide_player">Bạn phải quan sát một hình ảnh trong vòng 3 giây và cố gắng ghi nhớ nó. Sau đó bạn chọn hình ảnh mà bạn cho là đúng trong vòng 30s với những tấm hình chúng tôi đưa ra.</string>
+</resources>

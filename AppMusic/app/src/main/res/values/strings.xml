@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppMusic</string>
+    <string name="get_account">Get Account</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
+    <string name="username">UserName</string>
+    <string name="password">PassWord</string>
+    <string name="login_now">Login Now</string>
+    <string name="login_successful">admin</string>
+    <string name="init_time">00:00</string>
+</resources>

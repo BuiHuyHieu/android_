@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/custom_bg">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imgeView_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/itunes"
+            android:contentDescription="@string/todo" />
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/relley1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgeView_1"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="5dp"
+                android:text="@string/login"
+                android:textColor="#F5F5F7"
+                android:textSize="40sp" tools:targetApi="jelly_bean" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvLogin"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingBottom="10dp"
+                    android:text="@string/username"
+                    android:textAllCaps="true"
+                    android:textColor="#FAFBFC"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:background="@drawable/custome_et"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    tools:targetApi="o" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingBottom="10dp"
+                    android:text="@string/password"
+                    android:textAllCaps="true"
+                    android:textColor="#FAFBFC"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etPassWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custome_et"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/click_button"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/login_now"
+                    android:textColor="#FAFBFC"
+                    android:textSize="16sp" tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/tvGetAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/get_account"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

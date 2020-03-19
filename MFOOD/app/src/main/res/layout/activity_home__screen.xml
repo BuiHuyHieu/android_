@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_Screen">
+    <LinearLayout
+        android:translationX="-205dp"
+        android:background="#2540D9"
+        android:layout_weight="1.5"
+        android:id="@+id/fragment_Home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <LinearLayout
+                android:background="@drawable/avatar"
+                android:layout_marginTop="26dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="3dp"
+                    android:layout_gravity="center"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="65dp"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    >
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/avatar"
+                        android:src="@drawable/avatar_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:fontFamily="@font/mono_regular"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/admin"
+            android:textSize="20sp"
+            android:textColor="#060606"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvProfile"
+            android:fontFamily="@font/hel_bold"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center"
+            android:text="@string/profile"
+            android:textSize="24sp"
+            android:textColor="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvAddFood"
+            android:fontFamily="@font/hel_bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/add_food"
+            android:textSize="24sp"
+            android:textColor="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvSignOut"
+            android:fontFamily="@font/hel_bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/sign_out"
+            android:textSize="24sp"
+            android:textColor="#5B4F4F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:src="@drawable/fast_food" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:translationX="-205dp"
+        android:layout_weight="3"
+        android:id="@+id/fragment_listFood"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

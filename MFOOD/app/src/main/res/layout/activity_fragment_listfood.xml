@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainFragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_listView"
+    android:background="@color/background_color">
+    <ImageButton
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/imgbtSelect"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_selected"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="3dp"
+        android:id="@+id/edtSearch"
+        android:fontFamily="@font/hel_thin"
+        android:textAlignment="textStart"
+        android:autofillHints="false"
+        android:hint="@string/search"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/imgbtSelect"
+        android:background="@drawable/search_view" />
+    <ImageButton
+        android:id="@+id/imgbtSearch"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_search"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/search" />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/imgbtSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".flash_light">
+
+    <FrameLayout
+        android:background="#767A7F"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ToggleButton
+            android:id="@+id/btFlashLight"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/custom_flashlight"
+            android:textOn=""
+            android:textOff=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+</LinearLayout>
